@@ -35,7 +35,7 @@ export const ADDED_RULE_STATES = {
 };
 
 const defaultRuleOptions = {
-    [RULE_OPTIONS.RULE_DOMAIN]: { checked: true },
+    [RULE_OPTIONS.RULE_DOMAIN]: { checked: false },
     [RULE_OPTIONS.RULE_THIRD_PARTY]: { checked: false },
     [RULE_OPTIONS.RULE_IMPORTANT]: { checked: false },
 };
@@ -86,7 +86,7 @@ class WizardStore {
             && !requestRule.documentLevelRule;
 
         this.ruleOptions = {
-            [RULE_OPTIONS.RULE_DOMAIN]: { checked: true },
+            [RULE_OPTIONS.RULE_DOMAIN]: { checked: false },
             [RULE_OPTIONS.RULE_THIRD_PARTY]: { checked: requestThirdParty },
             [RULE_OPTIONS.RULE_IMPORTANT]: { checked: isImportant },
         };

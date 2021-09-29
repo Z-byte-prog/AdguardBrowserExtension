@@ -383,7 +383,9 @@ const webrequestInit = function () {
         const { requestId } = requestDetails;
         const { statusCode } = requestDetails;
 
-        requestContextStorage.update(requestId, { responseHeaders });
+        const contentType = browserUtils.getHeaderValueByName(responseHeaders, 'content-type');
+
+        requestContextStorage.update(requestId, { responseHeaders, statusCode, contentType });
 
         webRequestService.processRequestResponse(tab, requestUrl, referrerUrl, requestType, responseHeaders);
 
@@ -395,17 +397,6 @@ const webrequestInit = function () {
             // Do not await function bellow, otherwise csp rules won't apply in time
             // Issue AG-6230
             filterSafebrowsing(tab, requestUrl);
-        }
-
-        // Content filtering will be undefined for chromium based builds
-        if (contentFiltering) {
-            const contentType = browserUtils.getHeaderValueByName(responseHeaders, 'content-type');
-
-            contentFiltering.onHeadersReceived(
-                requestId,
-                contentType,
-                statusCode,
-            );
         }
 
         let responseHeadersModified = false;

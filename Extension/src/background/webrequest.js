@@ -215,23 +215,16 @@ const webrequestInit = function () {
             const htmlRules = webRequestService.getContentRules(tab, referrerUrl) || [];
 
             if (replaceRules.length > 0 || htmlRules.length > 0) {
-                // TODO: We don't have it yet
-                // const contentType = browserUtils.getHeaderValueByName(responseHeaders, 'content-type');
-                const contentType = 'text/html; charset=utf-8';
-
                 const request = new TSUrlFilter.Request(
                     requestUrl, referrerUrl, RequestTypes.transformRequestType(requestType),
                 );
                 request.requestId = requestId;
                 request.tabId = tab.tabId;
-                // TODO: We don't have it yet
-                request.statusCode = 200;
                 request.method = method;
 
-                contentFiltering.apply(
+                contentFiltering.onBeforeRequest(
                     backgroundPage.webRequest.filterResponseData(requestId),
                     request,
-                    contentType,
                     replaceRules || [],
                     htmlRules || [],
                 );
@@ -402,6 +395,17 @@ const webrequestInit = function () {
             // Do not await function bellow, otherwise csp rules won't apply in time
             // Issue AG-6230
             filterSafebrowsing(tab, requestUrl);
+        }
+
+        // Content filtering will be undefined for chromium based builds
+        if (contentFiltering) {
+            const contentType = browserUtils.getHeaderValueByName(responseHeaders, 'content-type');
+
+            contentFiltering.onHeadersReceived(
+                requestId,
+                contentType,
+                statusCode,
+            );
         }
 
         let responseHeadersModified = false;

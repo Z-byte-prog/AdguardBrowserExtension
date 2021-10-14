@@ -8863,10 +8863,10 @@ rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-ace@^9.4.3:
-  version "9.4.3"
-  resolved "https://registry.npmjs.org/react-ace/-/react-ace-9.4.3.tgz"
-  integrity sha512-WKknvcOZLhMtTSicRll94SjfZe6XEvZO6OpjJQCUGDcygZwfopkizeVntHX2ldMystbcmVES1RrjXUmyw0+wfQ==
+react-ace@^9.4.5:
+  version "9.4.5"
+  resolved "https://registry.yarnpkg.com/react-ace/-/react-ace-9.4.5.tgz#7977d1c3d873a12377d03a0838155080a9494a04"
+  integrity sha512-usvDUF3UrMMLdZ6guG4MePj3aYy9VuYRhyy6bNEYDYlLh57mQ7bQOOVQj95+DsPh0MVUqCse7NIglhDNDuKy3A==
   dependencies:
     ace-builds "^1.4.12"
     diff-match-patch "^1.0.5"

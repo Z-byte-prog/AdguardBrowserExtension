@@ -1983,7 +1983,12 @@ abbrev@^1.0.0:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-ace-builds@^1.4.14, ace-builds@^1.8.1:
+ace-builds@^1.11.0:
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.11.2.tgz#93fd7b7770909f3a48a23d71bd212d1b77baaaf5"
+  integrity sha512-1VNeUF56b6gkaeeWJXMBBuz5n0ceDchjUwwVmTKpNM/N3YRrUEpykGEEsg7Y1PKP7IRyqtXfAu6VJDg7OZaLfA==
+
+ace-builds@^1.4.14:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.10.1.tgz#612b78fabb0f2b6bce2d13ef9e44565d1fe01c6b"
   integrity sha512-w8Xj6lZUtOYAquVYvdpZhb0GxXrZ+qpVfgj5LP2FwUbXE8fPrCmfu86FjwOiSphx/8PMbXXVldFLD2+RIXayyA==

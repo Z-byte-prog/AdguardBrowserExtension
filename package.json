@@ -136,7 +136,7 @@
     "ua-parser-js": "^1.0.32",
     "url": "^0.11.0",
     "webextension-polyfill": "0.10.0",
-    "xstate": "^4.33.6",
+    "xstate": "^4.35.2",
     "zod": "^3.13.4"
   }
 }

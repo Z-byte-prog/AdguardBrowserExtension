@@ -9580,10 +9580,10 @@ xregexp@3.1.0:
   resolved "https://registry.yarnpkg.com/xregexp/-/xregexp-3.1.0.tgz#14d8461e0bdd38224bfee5039a0898fc42fcd336"
   integrity sha512-4Y1x6DyB8xRoxosooa6PlGWqmmSKatbzhrftZ7Purmm4B8R4qIEJG1A2hZsdz5DhmIqS0msC0I7KEq93GphEVg==
 
-xstate@^4.33.6:
-  version "4.37.1"
-  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.37.1.tgz#1dd5a8bda179ef6cbb42e0e5fe06c99048a1ce3c"
-  integrity sha512-MuB7s01nV5vG2CzaBg2msXLGz7JuS+x/NBkQuZAwgEYCnWA8iQMiRz2VGxD3pcFjZAOih3fOgDD3kDaFInEx+g==
+xstate@^4.38.1:
+  version "4.38.2"
+  resolved "https://registry.yarnpkg.com/xstate/-/xstate-4.38.2.tgz#1b74544fc9c8c6c713ba77f81c6017e65aa89804"
+  integrity sha512-Fba/DwEPDLneHT3tbJ9F3zafbQXszOlyCJyQqqdzmtlY/cwE2th462KK48yaANf98jHlP6lJvxfNtN0LFKXPQg==
 
 y18n@^5.0.5:
   version "5.0.8"

@@ -132,13 +132,13 @@
     "crypto-js": "4.2.0",
     "date-fns": "2.29.3",
     "idb": "8.0.2",
-    "js-beautify": "1.14.7",
+    "js-beautify": "1.14.10",
     "lodash-es": "4.17.21",
     "lru-cache": "11.0.2",
     "mobx": "6.9.0",
     "mobx-react": "7.6.0",
     "nanobar": "0.4.2",
-    "nanoid": "3.3.6",
+    "nanoid": "3.3.8",
     "prop-types": "15.8.1",
     "punycode": "2.3.0",
     "react": "17.0.2",
@@ -155,7 +155,7 @@
     "vm-browserify": "1.1.2",
     "webextension-polyfill": "0.12.0",
     "xstate": "5.19.0",
-    "zod": "3.21.4",
+    "zod": "3.22.3",
     "zod-validation-error": "3.4.0"
   }
 }
